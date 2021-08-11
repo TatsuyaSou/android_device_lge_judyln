@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">High-Brightness Mode Toggle</string>
+    <string name="tile_label">High-Brightness Mode</string>
+    <string name="hint">Make your display brighter</string>
+</resources>
