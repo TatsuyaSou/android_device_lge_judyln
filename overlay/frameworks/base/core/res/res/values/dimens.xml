@@ -19,7 +19,7 @@
 
 <resources>
     <!-- Height of the status bar -->
-    <dimen name="status_bar_height">24dp</dimen>
+    <dimen name="status_bar_height">28dp</dimen>
     
     <!-- Rounded corners during animations -->
     <dimen name="rounded_corner_radius">30dp</dimen>
