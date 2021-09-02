@@ -668,7 +668,7 @@
     <ctl name="Es9218 Bypass" value="0" />
     <!-- TERT MI2S TDM HEADPHONE -->
     <ctl name="Es9018 AVC Volume" value="25" />
-    <ctl name="SPK Profile" value="mboom" />
+    <ctl name="SPK Profile" value="music" />
     <ctl name="SPK SaaM" value="0" />
 
     <!-- Codec controls end -->
@@ -720,11 +720,6 @@
 
     <path name="echo-reference-voip">
         <ctl name="AUDIO_REF_EC_UL10 MUX" value="SLIM_RX" />
-    </path>
-
-    <path name="echo-reference-voip handset">
-        <ctl name="AUDIO_REF_EC_UL10 MUX" value="SLIM_RX" />
-        <ctl name="EC Reference Channels" value="One"/>
     </path>
 
     <path name="echo-reference-voip headphones">
@@ -2605,6 +2600,8 @@
 
     <path name="camcorder-mic">
         <path name="handset-mic" />
+        <ctl name="DEC6 Volume" value="83" />
+        <ctl name="ADC1 Volume" value="6" />
     </path>
 
     <path name="hdmi-tx">
@@ -2960,8 +2957,8 @@
         <ctl name="RX INT2 DEM MUX" value="CLSH_DSM_OUT" />
         <ctl name="HPHL Volume" value="10" />
         <ctl name="HPHR Volume" value="10" />
-        <ctl name="RX1 Mix Digital Volume" value="90" />
-        <ctl name="RX2 Mix Digital Volume" value="90" />
+        <ctl name="RX1 Mix Digital Volume" value="84" />
+        <ctl name="RX2 Mix Digital Volume" value="84" />
     </path>
 
     <path name="voice-tty-full-headphones">
@@ -3078,6 +3075,8 @@
     </path>
 
     <path name="bt-a2dp">
+        <ctl name="BT SampleRate" value="KHZ_48" />
+        <ctl name="AFE Input Channels" value="Two" />
         <ctl name="SLIM7_RX ADM Channels" value="Two" />
     </path>
 
@@ -4264,8 +4263,8 @@
         <ctl name="RX INT2_2 MUX" value="RX3" />
         <ctl name="RX INT1 DEM MUX" value="CLSH_DSM_OUT" />
         <ctl name="RX INT2 DEM MUX" value="CLSH_DSM_OUT" />
-        <ctl name="RX1 Mix Digital Volume" value="76" />
-        <ctl name="RX2 Mix Digital Volume" value="76" />
+        <ctl name="RX1 Mix Digital Volume" value="75" />
+        <ctl name="RX2 Mix Digital Volume" value="75" />
         <ctl name="HPHL Volume" value="20" />
         <ctl name="HPHR Volume" value="20" />
     </path>
@@ -4288,7 +4287,7 @@
 
 <!-- ESS DAC START -->
     <path name="headphones-hifi-dac">
-        <ctl name="Es9018 AVC Volume" value="15" />
+        <ctl name="Es9018 AVC Volume" value="16" />
         <ctl name="Es9018 Master Volume" value="0" />
         <ctl name="Es9018 HEADSET TYPE" value="1" />
     </path>
@@ -4306,7 +4305,7 @@
     </path>
 
     <path name="headphones-hifi-dac-44.1">
-        <ctl name="Es9018 AVC Volume" value="14" />
+        <ctl name="Es9018 AVC Volume" value="16" />
         <ctl name="Es9018 Master Volume" value="0" />
         <ctl name="Es9018 HEADSET TYPE" value="1" />
     </path>
@@ -4325,19 +4324,19 @@
 
     <path name="headphones-hifi-dacdop">
         <ctl name="Es9018 Master Volume" value="0" />
-        <ctl name="Es9018 AVC Volume" value="15" />
+        <ctl name="Es9018 AVC Volume" value="16" />
         <ctl name="Es9018 HEADSET TYPE" value="1" />
     </path>
 
     <path name="headphones-hifi-dacdop-advanced">
         <ctl name="Es9018 Master Volume" value="0" />
-        <ctl name="Es9018 AVC Volume" value="1" />
+        <ctl name="Es9018 AVC Volume" value="0" />
         <ctl name="Es9018 HEADSET TYPE" value="2" />
     </path>
 
     <path name="headphones-hifi-dacdop-aux">
         <ctl name="Es9018 Master Volume" value="0" />
-        <ctl name="Es9018 AVC Volume" value="7" />
+        <ctl name="Es9018 AVC Volume" value="6" />
         <ctl name="Es9018 HEADSET TYPE" value="3" />
     </path>
 
@@ -4555,13 +4554,13 @@
         <ctl name="CDC_IF TX7 MUX" value="DEC7" />
         <ctl name="ADC MUX7" value="AMIC" />
         <ctl name="AMIC MUX7" value="ADC1" />
-        <ctl name="ADC1 Volume" value="15" />
-        <ctl name="DEC7 Volume" value="86" />
+        <ctl name="ADC1 Volume" value="18" />
+        <ctl name="DEC7 Volume" value="82" />
         <ctl name="CDC_IF TX8 MUX" value="DEC8" />
         <ctl name="ADC MUX8" value="AMIC" />
         <ctl name="AMIC MUX8" value="ADC3" />
-        <ctl name="ADC3 Volume" value="15" />
-        <ctl name="DEC8 Volume" value="86" />
+        <ctl name="ADC3 Volume" value="18" />
+        <ctl name="DEC8 Volume" value="82" />
         <ctl name="SLIM_0_TX Channels" value="Two" />
         <ctl name="IIR0 INP0 MUX" value="DEC7" />
         <ctl name="AUDIO_REF_EC_UL1 MUX" value="SEC_MI2S_RX"/>
@@ -4728,7 +4727,7 @@
         <ctl name="ADC MUX6" value="AMIC" />
         <ctl name="AMIC MUX6" value="ADC1" />
         <ctl name="ADC1 Volume" value="8" />
-        <ctl name="DEC6 Volume" value="84" />
+        <ctl name="DEC6 Volume" value="83" />
     </path>
 
     <path name="hifi-recorder-180">
@@ -4743,7 +4742,7 @@
         <ctl name="ADC MUX8" value="AMIC" />
         <ctl name="AMIC MUX8" value="ADC3" />
         <ctl name="ADC3 Volume" value="8" />
-        <ctl name="DEC7 Volume" value="84" />
+        <ctl name="DEC7 Volume" value="83" />
         <ctl name="DEC8 Volume" value="84" />
     </path>
 
@@ -4754,7 +4753,7 @@
         <ctl name="ADC MUX6" value="AMIC" />
         <ctl name="AMIC MUX6" value="ADC3" />
         <ctl name="ADC3 Volume" value="8" />
-        <ctl name="DEC6 Volume" value="84" />
+        <ctl name="DEC6 Volume" value="83" />
     </path>
 
     <path name="hifi-recorder-speech-0">
@@ -4769,8 +4768,8 @@
         <ctl name="ADC MUX8" value="AMIC" />
         <ctl name="AMIC MUX8" value="ADC1" />
         <ctl name="ADC3 Volume" value="8" />
-        <ctl name="DEC7 Volume" value="84" />
-        <ctl name="DEC8 Volume" value="84" />
+        <ctl name="DEC7 Volume" value="83" />
+        <ctl name="DEC8 Volume" value="83" />
     </path>
 
     <path name="hifi-recorder-speech-90">
@@ -4780,7 +4779,7 @@
         <ctl name="ADC MUX6" value="AMIC" />
         <ctl name="AMIC MUX6" value="ADC1" />
         <ctl name="ADC1 Volume" value="8" />
-        <ctl name="DEC6 Volume" value="84" />
+        <ctl name="DEC6 Volume" value="83" />
     </path>
 
     <path name="hifi-recorder-speech-180">
@@ -4795,8 +4794,8 @@
         <ctl name="ADC MUX8" value="AMIC" />
         <ctl name="AMIC MUX8" value="ADC3" />
         <ctl name="ADC3 Volume" value="8" />
-        <ctl name="DEC7 Volume" value="84" />
-        <ctl name="DEC8 Volume" value="84" />
+        <ctl name="DEC7 Volume" value="83" />
+        <ctl name="DEC8 Volume" value="83" />
     </path>
 
     <path name="hifi-recorder-speech-270">
@@ -4806,7 +4805,7 @@
         <ctl name="ADC MUX6" value="AMIC" />
         <ctl name="AMIC MUX6" value="ADC3" />
         <ctl name="ADC3 Volume" value="8" />
-        <ctl name="DEC6 Volume" value="84" />
+        <ctl name="DEC6 Volume" value="83" />
     </path>
 
     <path name="hifi-recorder-concert-0">
@@ -4868,11 +4867,11 @@
         <ctl name="CDC_IF TX7 MUX" value="DEC7" />
         <ctl name="ADC MUX7" value="AMIC" />
         <ctl name="AMIC MUX7" value="ADC3" />
-        <ctl name="ADC1 Volume" value="16" />
+        <ctl name="ADC1 Volume" value="8" />
         <ctl name="CDC_IF TX8 MUX" value="DEC8" />
         <ctl name="ADC MUX8" value="AMIC" />
         <ctl name="AMIC MUX8" value="ADC1" />
-        <ctl name="ADC3 Volume" value="16" />
+        <ctl name="ADC3 Volume" value="8" />
         <ctl name="DEC7 Volume" value="84" />
         <ctl name="DEC8 Volume" value="84" />
     </path>
@@ -4994,7 +4993,7 @@
     <path name="mictest-submic1">
         <path name="amic3" />
         <ctl name="SLIM_0_TX SampleRate" value="KHZ_192" />
-        <ctl name="DEC6 Volume" value="103" />
+        <ctl name="DEC6 Volume" value="95" />
     </path>
 
      <path name="mictest-submic2">
@@ -5099,7 +5098,7 @@
     <path name="voip-headset-mic">
         <path name="headset-mic" />
         <ctl name="ADC2 Volume" value="16" />
-        <ctl name="DEC1 Volume" value="86" />
+        <ctl name="DEC1 Volume" value="84" />
     </path>
 
     <path name="mmap-playback">
