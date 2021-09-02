@@ -303,8 +303,15 @@ vendor/lib64/libsymphonypower-1.1.4.so
 
 # Fingerprint
 vendor/lib64/hw/fingerprint.sdm845.so
-vendor/lib64/libfpfactory.so
-vendor/lib/libfpfactory.so
+vendor/usr/idc/uinput-fpc.idc
+vendor/usr/keylayout/uinput-fpc.kl
+-vendor/etc/vintf/manifest/vendor.lge.hardware.biometrics.fingerprint@2.1.xml
+vendor/bin/hw/vendor.lge.hardware.biometrics.fingerprint@2.1-service
+vendor/etc/init/vendor.lge.hardware.biometrics.fingerprint@2.1-service.rc
+lib64/vendor.lge.hardware.biometrics.fingerprint@2.1.so:vendor/lib64/vendor.lge.hardware.biometrics.fingerprint@2.1.so
+vendor/lib64/libQSEEComAPI.so
+vendor/etc/init/hw/init.lge.fingerprints.rc
+vendor/lib/libQSEEComAPI.so
 
 # Firmware (Audio)
 vendor/firmware/Tfa9872.cnt
