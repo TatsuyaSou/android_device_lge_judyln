@@ -1,9 +1,6 @@
 #
-# system props for judyln
+# system props for judyp
 #
 
 # Voice Assistant
-#ro.opa.device_model_id=g7-deviceaction-g7-hno4u3
-
-# OTA
-#dot.updater.uri=https://ota.thenotonly.com/builds/dotos/judyln/update.json
+ro.opa.device_model_id=v35-deviceaction-v35-hno4u3
